@@ -1,0 +1,19 @@
+header {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.right-zone {
+  display: flex;
+  gap: 3rem;
+}
+
+.toggle-mode {
+  display: flex;
+}
+
+.user-profile > img {
+  border-radius: 50%;
+}
