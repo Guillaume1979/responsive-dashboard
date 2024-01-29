@@ -27,11 +27,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 10px solid #388038;
+  border: 10px solid var(--border-color, dimgrey);
   height: 100px;
   width: 100px;
   border-radius: 50%;
   font-weight: 600;
   color: dimgrey;
   font-size: 0.9rem;
+}
+
+.sales {
+  --border-color: #548d54;
+}
+
+.visit {
+  --border-color: #b43939;
+}
+
+.searches {
+  --border-color: #7878ee;
 }
