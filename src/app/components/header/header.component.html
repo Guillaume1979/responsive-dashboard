@@ -4,18 +4,16 @@
   </div>
 
   <nav>
-    <ul>
-      <li>Dashboard</li>
-      <li>Users</li>
-      <li>History</li>
-      <li>Analytics</li>
-      <li>Tickets</li>
-      <li>Sale List</li>
-      <li>Reports</li>
-      <li>Settings</li>
-      <li>New Login</li>
-      <li>Logout</li>
-    </ul>
+    <app-nav-link [iconName]="'dashboard'" [displayedName]="'Dashboard'"/>
+    <app-nav-link [iconName]="'person_outline'" [displayedName]="'Users'"/>
+    <app-nav-link [iconName]="'receipt_long'" [displayedName]="'History'"/>
+    <app-nav-link [iconName]="'insights'" [displayedName]="'Analytics'"/>
+    <app-nav-link [iconName]="'mail_outline'" [displayedName]="'Tickets'"/>
+    <app-nav-link [iconName]="'inventory'" [displayedName]="'Sale List'"/>
+    <app-nav-link [iconName]="'report_gmailerrorred'" [displayedName]="'Reports'"/>
+    <app-nav-link [iconName]="'settings'" [displayedName]="'Settings'"/>
+    <app-nav-link [iconName]="'add'" [displayedName]="'New Login'"/>
+    <app-nav-link [iconName]="'logout'" [displayedName]="'Logout'"/>
   </nav>
   <div class="right-zone">
     <div class="toggle-mode">
@@ -29,7 +27,7 @@
       </div>
     </div>
     <div class="user-profile">
-      <img src="assets/images/profile-1.jpg" alt="profil de l'utilisateur" width="40px" height="40px">
+      <img ngSrc="assets/images/profile-1.jpg" alt="profil de l'utilisateur" width="40" height="40">
     </div>
   </div>
 

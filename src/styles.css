@@ -4,11 +4,27 @@
   box-sizing: border-box;
 }
 
-html{
-
+html {
+  font-size: 62.5%; /* 1rem = 10px */
 }
 
 body {
   font-family: system-ui;
+  font-size: 1.7rem; /* 17px */
+  font-weight: 500;
+}
 
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
 }
