@@ -17,7 +17,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 80dvw;
+  width: clamp(300px, 80dvw, 45rem);
   font-weight: 600;
 }
 
