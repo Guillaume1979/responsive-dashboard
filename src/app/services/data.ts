@@ -29,15 +29,18 @@ export type Order = {
 export const users: User[] = [
   {
     name: 'Jack',
-    lastConnection: '54 Min Ago'
+    lastConnection: '54 Min Ago',
+    imagePath: 'assets/images/jake-nackos-IF9TK5Uy-KI-unsplash.jpg'
   },
   {
     name: 'Amir',
-    lastConnection: '3 Hours Ago'
+    lastConnection: '3 Hours Ago',
+    imagePath: 'assets/images/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg'
   },
   {
     name: 'Ember',
-    lastConnection: '6 Hours Ago'
+    lastConnection: '6 Hours Ago',
+    imagePath: 'assets/images/stefan-stefancik-QXevDflbl8A-unsplash.jpg'
   }
 
 ];
@@ -45,4 +48,5 @@ export const users: User[] = [
 export type User = {
   name: string;
   lastConnection: string;
+  imagePath: string;
 }

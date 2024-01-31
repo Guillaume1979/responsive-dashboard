@@ -6,7 +6,7 @@ import {User, users} from "./data";
 })
 export class UserService {
 
-  #users = signal<User[]>([])
+  #users = signal<User[]>(users)
   readonly users = this.#users.asReadonly();
 
   initUsers() {

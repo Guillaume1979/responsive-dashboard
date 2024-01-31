@@ -1,0 +1,39 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.users {
+  display: grid;
+  gap: 3rem 1rem;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  background-color: var(--itemBackgroundColor);
+  border-radius: var(--itemBorderRadius);
+  padding: 3rem;
+  min-height: 35rem;
+  width: var(--itemMobileWidth);
+}
+
+.user-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-name {
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+h1 {
+  align-self: flex-start;
+}
+
+img {
+  border-radius: 50%;
+}

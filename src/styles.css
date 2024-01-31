@@ -28,3 +28,10 @@ img {
 li {
   list-style: none;
 }
+
+:root {
+  --globalBackgroundColor: linear-gradient(to bottom, #b2b2b2, #e0dfdf 2%);
+  --itemBackgroundColor: white;
+  --itemBorderRadius: 20px;
+  --itemMobileWidth: clamp(300px, 80dvw, 45rem);
+}

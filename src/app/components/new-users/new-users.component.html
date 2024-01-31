@@ -1,1 +1,18 @@
-<p>new-users works!</p>
+<h1>New Users</h1>
+
+<section class="users">
+  @for (user of users(); track user.name) {
+    <div class="user-container">
+      <img ngSrc="{{user.imagePath}}" width="80" height="80" alt="user face">
+      <span class="user-name">{{ user.name }}</span>
+      <span class="user-connection">{{ user.lastConnection }}</span>
+    </div>
+  } @empty {
+    <span>No user available</span>
+  }
+  <div class="user-container">
+    <img ngSrc="assets/images/plus.png" width="80" height="80" alt="a plus symbol">
+    <span class="user-name">More</span>
+    <span class="user-connection">New User</span>
+  </div>
+</section>

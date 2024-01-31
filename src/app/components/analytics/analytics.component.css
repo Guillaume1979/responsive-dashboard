@@ -1,7 +1,7 @@
 :host {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   align-items: center;
 }
 
@@ -10,14 +10,14 @@ h1 {
 }
 
 .item {
-  background-color: white;
+  background-color: var(--itemBackgroundColor);
   padding: 3rem;
-  border-radius: 20px;
+  border-radius: var(--itemBorderRadius);
   min-height: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: clamp(300px, 80dvw, 45rem);
+  width: var(--itemMobileWidth);
   font-weight: 600;
 }
 
