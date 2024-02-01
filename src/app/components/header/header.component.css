@@ -3,6 +3,8 @@ header {
   gap: 1rem;
   justify-content: space-between;
   padding: 1rem;
+  width: 100%;
+  background-color: grey;
 }
 
 .right-zone {

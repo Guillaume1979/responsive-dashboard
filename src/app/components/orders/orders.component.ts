@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
+import {OrderService} from "../../services/order.service";
+import {LayoutService} from "../../services/layout.service";
 
 @Component({
   selector: 'app-orders',
@@ -8,5 +10,8 @@ import { Component } from '@angular/core';
   styleUrl: './orders.component.css'
 })
 export class OrdersComponent {
+  orderService = inject(OrderService);
+  orders = this.orderService.orders;
+  format = inject(LayoutService).format;
 
 }

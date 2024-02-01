@@ -1,1 +1,29 @@
-<p>orders works!</p>
+<h1>Recent Orders</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Course Name</th>
+    @if (format() !== 'Handset') {
+      <th>Course Number</th>
+    }
+    <th>Payment</th>
+    <th>Status</th>
+  </tr>
+  </thead>
+  <tbody>
+    @for (order of orders(); track order.name) {
+      <tr>
+        <td>{{ order.name }}</td>
+        @if (format() !== 'Handset') {
+          <td>{{ order.number }}</td>
+        }
+        <td>{{ order.payment }}</td>
+        <td>{{ order.status }}</td>
+        @if (format() !== 'Handset') {
+          <td><a>Details</a></td>
+        }
+      </tr>
+    }
+  </tbody>
+</table>
