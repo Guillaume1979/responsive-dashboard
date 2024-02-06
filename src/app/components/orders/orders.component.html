@@ -1,6 +1,6 @@
 <h1>Recent Orders</h1>
 
-<table>
+<table [ngClass]="{'handsetTable': format()==='Handset'}">
   <thead>
   <tr>
     <th>Course Name</th>
@@ -14,12 +14,12 @@
   <tbody>
     @for (order of orders(); track order.name) {
       <tr>
-        <td>{{ order.name }}</td>
+        <td data-label="name">{{ order.name }}</td>
         @if (format() !== 'Handset') {
           <td>{{ order.number }}</td>
         }
-        <td>{{ order.payment }}</td>
-        <td>{{ order.status }}</td>
+        <td data-label="payment">{{ order.payment }}</td>
+        <td data-label="status">{{ order.status }}</td>
         @if (format() !== 'Handset') {
           <td><a>Details</a></td>
         }

@@ -12,7 +12,6 @@ h1 {
 table {
   background-color: var(--itemBackgroundColor);
   border-radius: var(--itemBorderRadius);
-  /*min-height: 35rem;*/
   width: var(--itemMobileWidth);
   border-collapse: collapse;
 }
@@ -31,4 +30,28 @@ th:last-of-type, td:last-of-type {
 
 th {
   text-align: left;
+}
+
+.deleteHeader {
+  display: none;
+}
+
+.handsetTable td {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+}
+
+.handsetTable td::before {
+  content: attr(data-label);
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.handsetTable tr:nth-child(even) {
+  background-color: darkgrey;
+}
+
+.handsetTable th {
+  display: none;
 }

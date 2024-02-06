@@ -1,11 +1,14 @@
 import {Component, inject} from '@angular/core';
 import {OrderService} from "../../services/order.service";
 import {LayoutService} from "../../services/layout.service";
+import {NgClass} from "@angular/common";
 
 @Component({
   selector: 'app-orders',
   standalone: true,
-  imports: [],
+  imports: [
+    NgClass
+  ],
   templateUrl: './orders.component.html',
   styleUrl: './orders.component.css'
 })
