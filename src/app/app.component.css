@@ -4,10 +4,49 @@
   min-height: 100dvh;
 }
 
+.analytics {
+  grid-area: analytics;
+}
+
+.users {
+  grid-area: users;
+}
+
+.orders {
+  grid-area: orders;
+}
+
+.reminders {
+  grid-area: reminders;
+}
+
 main {
   background: var(--globalBackgroundColor);
   flex: 1;
   padding: 3rem 2.5rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "analytics"
+    "users"
+    "orders"
+    "reminders";
+  gap: 1em;
+}
+
+.tablet {
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "analytics users"
+    "orders reminders";
+}
+
+.web {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "analytics analytics analytics"
+    "users orders reminders";
 }
 
 main > * {
@@ -16,5 +55,5 @@ main > * {
 
 app-header {
   position: sticky;
-  top:0;
+  top: 0;
 }

@@ -7,11 +7,12 @@ import {AnalyticsComponent} from "./components/analytics/analytics.component";
 import {NewUsersComponent} from "./components/new-users/new-users.component";
 import {OrdersComponent} from "./components/orders/orders.component";
 import {RemindersComponent} from "./components/reminders/reminders.component";
+import {NgClass} from "@angular/common";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, AnalyticsComponent, NewUsersComponent, OrdersComponent, RemindersComponent],
+  imports: [RouterOutlet, HeaderComponent, AnalyticsComponent, NewUsersComponent, OrdersComponent, RemindersComponent, NgClass],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
