@@ -53,3 +53,7 @@ h1 {
 .searches {
   --border-color: #7878ee;
 }
+
+.web {
+  width: 50%;
+}

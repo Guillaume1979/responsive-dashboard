@@ -1,6 +1,6 @@
 <h1>Analytics</h1>
 
-<div class="sales item">
+<div class="sales item" [ngClass]="{'web': format() === 'Web'}">
   <div>
     <p class="item-title">Total Sales</p>
     <span class="item-value">$65,024</span>
@@ -8,7 +8,7 @@
   <div class="item-progress">+81%</div>
 </div>
 
-<div class="visit item">
+<div class="visit item" [ngClass]="{'web': format() === 'Web'}">
   <div>
     <p class="item-title">Site Visit</p>
     <span class="item-value">24,981</span>
@@ -16,7 +16,7 @@
   <div class="item-progress">-48%</div>
 </div>
 
-<div class="searches item">
+<div class="searches item" [ngClass]="{'web': format() === 'Web'}">
   <div>
     <p class="item-title">Searches</p>
     <span class="item-value">14,147</span>
